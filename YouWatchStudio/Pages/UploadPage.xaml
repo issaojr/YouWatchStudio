@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YouWatchStudio.Pages.UploadPage"
+             Title="Upload Conteúdo">
+
+    <StackLayout Padding="20">
+        <Label Text="Upload de Conteúdo" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center"/>
+
+        <Button Text="Escolher Arquivo" Clicked="OnChooseFileClicked" Margin="0,20,0,0"/>
+
+        <Label x:Name="SelectedFileLabel" Text="Nenhum arquivo selecionado" FontSize="Medium" Margin="0,10,0,0"/>
+
+        <Button Text="Upload" Clicked="OnUploadClicked" BackgroundColor="LightBlue" Margin="0,20,0,0"/>
+    </StackLayout>
+</ContentPage>

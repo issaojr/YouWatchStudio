@@ -7,9 +7,29 @@
     Shell.FlyoutBehavior="Disabled"
     Title="YouWatchStudio">
 
+    <!-- Página inicial - Dashboard -->
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:Pages.DashboardPage}"
+        Route="DashboardPage" />
+
+    <!-- Página de Upload de Conteúdo -->
+    <ShellContent
+        Title="Upload"
+        ContentTemplate="{DataTemplate local:Pages.UploadPage}"
+        Route="UploadPage" />
+
+    <!-- Página de Gerenciamento de Conteúdo -->
+    <ShellContent
+        Title="Conteúdos"
+        ContentTemplate="{DataTemplate local:Pages.ContentManagementPage}"
+        Route="ContentManagementPage" />
+
+    <!-- Página de Métricas de Desempenho -->
+    <ShellContent
+        Title="Métricas"
+        ContentTemplate="{DataTemplate local:Pages.MetricsPage}"
+        Route="MetricsPage" />
 
 </Shell>
+

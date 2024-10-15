@@ -1,0 +1,29 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YouWatchStudio.Pages.DashboardPage"
+             Title="Dashboard">
+
+    <StackLayout Padding="10">
+        <!-- Título da Dashboard -->
+        <Label Text="Bem-vindo à sua Dashboard" 
+               FontSize="Large" 
+               HorizontalOptions="Center" 
+               Padding="0,20,0,10"/>
+
+        <!-- Botões para navegação entre as funções principais -->
+        <Button Text="Upload de Conteúdo" 
+                Clicked="OnUploadClicked"
+                Margin="0,10"/>
+
+        <Button Text="Análise de Desempenho" 
+                Clicked="OnAnalyticsClicked"
+                Margin="0,10"/>
+
+        <!-- Botão de logout -->
+        <Button Text="Logout"
+                Clicked="OnLogoutClicked"
+                BackgroundColor="Red"
+                TextColor="White"
+                Margin="0,20"/>
+    </StackLayout>
+</ContentPage>

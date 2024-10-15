@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YouWatchStudio.Pages.ContentManagementPage"
+             Title="Gerenciamento de Conteúdo">
+
+    <StackLayout Padding="20">
+        <Label Text="Seus Conteúdos" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center"/>
+
+        <ListView x:Name="ContentListView" Margin="0,20,0,0">
+            <!-- Temporariamente definimos itens para simulação -->
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>VideoTutorial01.mp4</x:String>
+                    <x:String>PodcastEpisode1.mp3</x:String>
+                    <x:String>GameplayVideo.mkv</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+        </ListView>
+
+        <Button Text="Editar Conteúdo" Margin="0,10,0,0"/>
+        <Button Text="Remover Conteúdo" BackgroundColor="LightCoral" Margin="0,10,0,0"/>
+    </StackLayout>
+</ContentPage>

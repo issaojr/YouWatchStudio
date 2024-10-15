@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YouWatchStudio.Pages.MetricsPage"
+             Title="Métricas de Desempenho">
+
+    <StackLayout Padding="20">
+        <Label Text="Métricas de Desempenho" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center"/>
+
+        <Label Text="VideoTutorial01.mp4" FontAttributes="Bold" FontSize="Medium" Margin="0,20,0,0"/>
+        <Label Text="Visualizações: 1500" FontSize="Small"/>
+        <Label Text="Curtidas: 320" FontSize="Small"/>
+
+        <Label Text="PodcastEpisode1.mp3" FontAttributes="Bold" FontSize="Medium" Margin="0,20,0,0"/>
+        <Label Text="Visualizações: 800" FontSize="Small"/>
+        <Label Text="Curtidas: 100" FontSize="Small"/>
+    </StackLayout>
+</ContentPage>
