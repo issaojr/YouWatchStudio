@@ -11,17 +11,18 @@ namespace YouWatchStudio.Pages
 
         private async void OnUploadClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new UploadPage());
+            await Shell.Current.GoToAsync("//UploadPage");
         }
 
-        private async void OnAnalyticsClicked(object sender, EventArgs e)
+        private async void OnMetricsClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MetricsPage());
+            await Shell.Current.GoToAsync("//MetricsPage");
         }
 
         private async void OnLogoutClicked(object sender, EventArgs e)
         {
-            await Navigation.PopToRootAsync(); // Voltar para a tela de login
+            // Voltar para a tela de login
+            await Shell.Current.GoToAsync("//LoginPage");
         }
     }
 }
